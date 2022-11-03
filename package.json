@@ -1,0 +1,13 @@
+{
+  "name": "textil-trace",
+  "version": "1.0.0",
+  "description": "Desarrollo del sitio web Textil Trace, una startup que inició en el 2020 haciendo trazabilidad",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

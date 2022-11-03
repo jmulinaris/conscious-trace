@@ -16,6 +16,7 @@ body {
   background-color: var(--dark);
   color: var(--secondary); 
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -70,9 +71,8 @@ a {
 }
 
 .container-contacto{
-  margin-top:5%;
   margin-left:1%;
-  margin-bottom:10%;
+  padding:5%;
 }
 
 .titulo-contacto{
@@ -104,7 +104,8 @@ footer{
   flex-wrap:wrap;
   background-color: var(--darkprimary);
   color:black;
-  padding: 2%;
+  padding:2%;
+  margin-top:10%;
 }
 
 .texto-footer{
@@ -133,9 +134,10 @@ footer{
 }
 
     @media(max-width: 480px){
+
     footer{
       justify-content: center;
-      margin-top: 20%;
+      margin-top: 40%;
     }
 
     .navbar{

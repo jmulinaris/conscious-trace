@@ -51,7 +51,7 @@ a:hover {
 
 .index{
   background-image: linear-gradient(to top, rgb(207, 217, 223, 0.200) 0%, rgba(226, 235, 240, 0.200) 100%), url(../img/index.png);
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-position: center fixed;
   height: 45vw;
   position:relative;
@@ -94,6 +94,10 @@ a:hover {
   margin-top:15%;
 }
 
+.contact-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(214, 201, 201, 0.2);
+}
 
 .conocenos{
   font-size:50px;
@@ -179,7 +183,7 @@ footer{
 
     footer a{
       color:white;
-      text-decoration: none;
+      text-decoration: black;
     }
 
     .navbar{

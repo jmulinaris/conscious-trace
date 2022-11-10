@@ -60,7 +60,6 @@ a:hover {
 .index{
   background-image: linear-gradient(to top, rgb(207, 217, 223, 0.200) 0%, rgba(226, 235, 240, 0.200) 100%), url(../img/index.png);
   background-repeat: no-repeat;
-  background-position: center fixed;
   height: 45vw;
   position:relative;
   display:flex;

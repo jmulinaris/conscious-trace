@@ -232,7 +232,7 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin:3%;
+  margin-right:3%;
 }
 
 .h3-trazabilidad, .h3-trazabilidad2{
@@ -429,11 +429,8 @@ footer{
     }
 
     .xclose{
-      margin-bottom:250%;
-      /* margin-left:70%;
-      margin-right:5%; */
+      margin-bottom:270%;
       width:15%;
-      /* position:fixed; */
       cursor:pointer;
       border-radius: 10px;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
@@ -532,13 +529,18 @@ footer{
       display:grid;
       grid-template-columns: repeat(2, 40%);
       align-content: center;
-      justify-content: space-evenly;
-      margin-right:2%;
+      justify-content: center;
+      margin-right:3%;
+      margin-left:3%;
       /* margin-right:0;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       flex-wrap: nowrap; */
+    }
+
+    .alianzas-img img{
+      width:80%;
     }
 
     .container-servicio{
@@ -594,13 +596,16 @@ footer{
       }
     }
 
-@media screen and (max-width: 326px){
+@media screen and (max-width: 320px){
+  #nosotros, #trazabilidad {
+    display:grid;
+    grid-template-columns: 90%;
+    text-align:center;
+  }
 
-  html{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin:0;
+  .index{
+    align-items:center;
+    justify-content: center;
   }
 
   .titulo-index{
@@ -620,8 +625,17 @@ footer{
   }
 
   .logo-name{
-    margin:0;
     margin-left:5%;
+  }
+
+  .alianzas-img{
+    display:grid;
+    grid-template-columns: 90%;
+    align-content: center;
+  }
+
+  .alianzas-img img{
+    width:60%;
   }
 }
 

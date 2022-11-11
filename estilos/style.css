@@ -12,11 +12,15 @@
   --titulos:#0B0B0B;
 }
 
+html, body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
 body {
   background-color: var(--dark);
   color: var(--secondary); 
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 :root{

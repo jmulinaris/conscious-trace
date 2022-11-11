@@ -346,6 +346,7 @@ footer{
   padding:1%;
 }
 
+/*!RESPONSIVE TABLET*/
   @media(max-width: 768px){
 
     .hamburger{
@@ -403,7 +404,8 @@ footer{
     }
 }
 
-    @media screen and (max-width: 480px){
+/*!RESPONSIVE CELULAR*/
+    @media (max-width: 480px){
     
     .index-container{
       display:flex;
@@ -417,25 +419,25 @@ footer{
       margin-right:25%;
     }
 
-    .logo{
-      width:70%;
-    }
-
     .hamburger{
       margin-left:75%;
       width:10%;
     }
 
     .xclose{
-      margin-bottom:220%;
-      margin-left:70%;
-      margin-right:5%;
+      margin-bottom:250%;
+      /* margin-left:70%;
+      margin-right:5%; */
       width:15%;
-      position:fixed;
+      /* position:fixed; */
       cursor:pointer;
       border-radius: 10px;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
+    }
+
+    .navbar{
+      align-items: center;
     }
 
     .celular{
@@ -455,18 +457,17 @@ footer{
     }
 
     .titulo-index{
-      font-size: 1.8rem;
+      font-size: 2rem;
+      padding:1%;
     }
 
     .subtitulo-index{
-      font-size:1.2rem;
+      display:none;
     }
 
     .contact-button{
-      margin-top:9%;
       font-size:15px;
       width: 50%;
-      margin-bottom:5%;
     }
 
     #nosotros, #trazabilidad{
@@ -528,6 +529,7 @@ footer{
       grid-template-columns: repeat(2, 40%);
       align-content: center;
       justify-content: space-evenly;
+      margin-right:2%;
       /* margin-right:0;
       flex-direction: column;
       align-items: center;
@@ -587,4 +589,35 @@ footer{
         display:none;
       }
     }
+
+@media screen and (max-width: 326px){
+
+  html{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+  }
+
+  .titulo-index{
+    font-size: 1.2rem;
+    margin:0;
+    text-align: center;
+  }
+
+  .xclose{
+    margin-bottom:570px;
+  }
+
+  .hamburger{
+    margin:0;
+    margin-left:70%;
+    margin-right:10%;
+  }
+
+  .logo-name{
+    margin:0;
+    margin-left:5%;
+  }
+}
 

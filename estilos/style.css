@@ -419,17 +419,18 @@ footer{
     }
 
     .logo{
-      width:60%;
+      width:70%;
     }
 
     .hamburger{
-      margin-left:80%;
+      margin-left:75%;
+      width:10%;
     }
 
     .xclose{
-      margin:0;
-      margin-left:60%;
-      margin-bottom:220%;
+      margin-bottom:250%;
+      margin-left:70%;
+      margin-right:5%;
       width:15%;
       position:fixed;
       cursor:pointer;
@@ -437,6 +438,7 @@ footer{
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
       color:white;
+      grid-area:close;
     }
 
     .celular{
@@ -446,7 +448,7 @@ footer{
     .index{
       height:80vw;
       background-image: url(../img/index.png);
-      
+
     }
 
     .texto-index{
@@ -470,10 +472,10 @@ footer{
     }
 
     .contact-button{
-      margin:0;
       margin-top:9%;
       font-size:15px;
       width: 50%;
+      margin-bottom:5%;
     }
 
     #nosotros, #trazabilidad{
@@ -531,6 +533,7 @@ footer{
 
     .alianzas-contenedor{
       align-items: center;
+      padding:5%;
     }
 
     .alianzas-img{
@@ -544,7 +547,7 @@ footer{
     }
 
     .item-servicio{
-      width:70%;
+      width:75%;
     }
 
     .container-servicio2{

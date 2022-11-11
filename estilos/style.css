@@ -88,7 +88,7 @@ a:hover {
   flex-direction: row;
   align-items: center;
   color: var(--primary);
-  width:35%;
+  width:95%;
 }
 
 .logo:hover{
@@ -109,24 +109,28 @@ a:hover {
 }
 
 .celular{
-  width: 33%;
+  width: 60%;
   transform: perspective(400px) rotateY( -20deg) rotateZ(10deg);  
-  margin-left:25%;
+}
+
+.container-celular{
+  width:50%;
 }
 
 .titulo-index{
   font-style: normal;
-  font-size: 70px;
+  font-size: 3rem;
   opacity:1;
-  margin-left:7%;
+}
+
+.texto-index{
   width:100%;
+  margin-left:10%;
 }
 
 .subtitulo-index{
-  font-size:35px;
+  font-size:2rem;
   opacity:1;
-  margin-left:7%;
-  width:100%;
 }
 
 .contact-button{
@@ -165,7 +169,7 @@ a:hover {
   width:5%;
   border:1px solid var(--darkprimary);
   margin-left:2%;
-  margin-top:2.5%;
+  margin-top:3%;
 }
 
 .h3-nosotros{
@@ -351,10 +355,16 @@ footer{
 }
 
 /*!RESPONSIVE TABLET*/
-  @media(max-width: 768px){
+  @media (min-width:481px) and (max-width: 1023px) {
+    .index-container{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
 
     .hamburger{
-      width:7%;
+      width:5%;
       position:fixed;
       cursor:pointer;
       border-radius: 10px;
@@ -363,13 +373,13 @@ footer{
       display:inline-block;
       color:white;
       z-index:20;
-      margin-left:50%;
+      margin-left:85%;
     }
 
     .navbar{
       position:fixed;
       right:0;
-      width:50%;
+      width:40%;
       height: 100%;
       top:0%;
       display:flex;
@@ -381,12 +391,12 @@ footer{
       transform: translate(110%);
       transition: transform .3s ease-in-out;
       z-index:20;
+      font-size:1.4rem;
     }
 
     .xclose{
-      width:7%;
+      width:12%;
       margin-left:45%;
-      position:fixed;
       cursor:pointer;
       border-radius: 10px;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
@@ -406,6 +416,109 @@ footer{
     .navbar a:hover{
       color:white;
     }
+
+    .logo{
+      width:90%;
+      margin:0;
+    }
+
+    .logo-name{
+      margin-right:50%;
+    }
+
+    .titulo-index{
+      font-size: 2.4rem;
+      width:100%;
+      margin-top:2%;
+    }
+
+    .subtitulo-index{
+      font-size:1.3rem;
+      width:100%;
+    }
+
+    .container-celular{
+      width:50%;
+    }
+
+    .celular{
+      margin-left:30%;
+      width:60%;
+      margin-right:10%;
+    }
+
+    .index{
+      height:60vw;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-button{
+      font-size: 1rem;
+    }
+
+    .h2-nosotros, .h2-trazabilidad{
+      font-size:2rem;
+      margin:0;
+      margin-top:7%;
+      text-align: center;
+      padding:3%;
+    }
+
+    .h3-nosotros, .h3-trazabilidad, .h3-trazabilidad2{
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .nosotros-p, .nosotros-p2, .trazabilidad-p{
+      text-align: left;
+      font-size: 1.2rem;
+    }
+
+    .nosotros-p{
+      padding-left:5%;
+    }
+
+    footer{
+      margin-top: 20%;
+    }
+
+    footer a{
+      color:black;
+      text-decoration: black;
+    }
+
+    .footer-p{
+      font-size: 0.8rem;
+    }
+
+    .linea-azul{
+      width:10%;
+    }
+
+    .h2-trazabilidad::after{
+      margin-top:3.5%;
+    }
+
+    .h3-trazabilidad2::after{
+      margin-top:2.5%;
+    }
+
+    .alianzas-img img{
+      width:30%;
+    }
+
+    .logo-footer{
+      width:10%;
+    }
+
+    .remeraimg{
+      margin-top:5%;
+    }
+
+    .item-servicio{
+      width:40%;
+    }
 }
 
 /*!RESPONSIVE CELULAR*/
@@ -423,24 +536,67 @@ footer{
       margin-right:25%;
     }
 
+    .logo{
+      width:80%;
+      margin:0;
+    }
+
     .hamburger{
       margin-left:75%;
       width:10%;
-    }
-
-    .xclose{
-      margin-bottom:290%;
-      width:15%;
+      position:fixed;
       cursor:pointer;
       border-radius: 10px;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
+      display:inline-block;
+      color:white;
+      z-index:20;
+    }
+
+    .navbar{
+      position:fixed;
+      right:0;
+      width:40%;
+      height: 100%;
+      top:0%;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+      background-color: var(--primary);
+      transform: translate(110%);
+      transition: transform .3s ease-in-out;
+      z-index:20;
+    }
+
+    .xclose{
+      width:15%;
+      margin-left:45%;
+      cursor:pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+      background-color: var(--primary);
+      display:inline-block;
+    }
+
+    .spread{
+      transform: translate(0);
+    }
+
+    .navbar a{
+      text-decoration:none;
+    }
+
+    .navbar a:hover{
+      color:white;
     }
 
     .navbar{
       align-items: center;
     }
-
+    
     .celular{
       display:none;
     }
@@ -455,6 +611,7 @@ footer{
       flex-direction: column;
       align-items: center;
       margin-top:15%;
+      width:95%;
     }
 
     .titulo-index{
@@ -469,6 +626,10 @@ footer{
     .contact-button{
       font-size:15px;
       width: 50%;
+    }
+
+    .container-celular{
+      display:none;
     }
 
     #nosotros, #trazabilidad{
@@ -532,11 +693,6 @@ footer{
       justify-content: center;
       margin-right:3%;
       margin-left:3%;
-      /* margin-right:0;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: nowrap; */
     }
 
     .alianzas-img img{
@@ -614,10 +770,6 @@ footer{
     text-align: center;
   }
 
-  .xclose{
-    margin-bottom:570px;
-  }
-
   .hamburger{
     margin:0;
     margin-left:70%;
@@ -626,6 +778,10 @@ footer{
 
   .logo-name{
     margin-left:5%;
+  }
+
+  .logo{
+    width:80%;
   }
 
   .alianzas-img{

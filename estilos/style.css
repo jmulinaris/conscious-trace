@@ -288,15 +288,31 @@ a:hover {
     box-shadow: 0px -5px 10px rgba(235, 235, 235, 0.25), 0px 5px 25px rgba(235, 235, 235, 0.5);
 }
 
-.container-contacto{
+.container-contacto, .container-blog{
   margin-left:1%;
   padding:5%;
 }
 
-.titulo-contacto{
+.container-blog{
+  margin-bottom:20%;
+}
+
+.titulo-contacto, .titulo-blog{
   font-size:45px;
   text-align: left;
   margin-left:3%;
+}
+
+.titulo-blog{
+  text-align: center;
+  color:grey;
+}
+
+.texto-blog{
+  text-align: center;
+  color:grey;
+  font-style: italic;
+  font-size: 1.2rem;
 }
 
 .texto-contacto{
@@ -396,12 +412,12 @@ footer{
 
     .xclose{
       width:12%;
-      margin-left:45%;
+      margin: 0 10% 0 auto;
       cursor:pointer;
       border-radius: 10px;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
-      display:inline-block;
+      display:block;
       color:white;
     }
 
@@ -524,6 +540,10 @@ footer{
     .item-servicio{
       width:40%;
     }
+
+    .container-blog{
+      margin-bottom:50%;
+    }
 }
 
 /*!RESPONSIVE CELULAR*/
@@ -578,12 +598,12 @@ footer{
 
     .xclose{
       width:15%;
-      margin-left:45%;
+      margin: 0 10% 0 auto;
       cursor:pointer;
       border-radius: 10px;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
-      display:inline-block;
+      display:block;
     }
 
     .spread{
@@ -731,11 +751,15 @@ footer{
       font-size: 0.8rem;
     }
 
-    .container-contacto{
+    .container-contacto, .container-blog{
       display:flex;
       flex-direction: column;
       align-items: left;
       justify-content: center;
+    }
+
+    .container-blog{
+      margin-bottom:60%;
     }
 
     .texto-contacto{
@@ -745,6 +769,10 @@ footer{
     .titulo-contacto{
       font-size: 1.5rem;
       margin: 5% 1%;
+    }
+
+    .titulo-blog{
+      font-size: 2rem;
     }
 
     .texto-footer{

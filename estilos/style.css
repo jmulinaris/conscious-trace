@@ -36,6 +36,10 @@ a:hover {
   color: var(--primary); 
 }
 
+.contact-button a{
+  color:var(--secondary)
+}
+
 .medium{
   width:280px;
   height:280px;
@@ -767,7 +771,7 @@ footer{
     }
 
     .texto-contacto{
-      font-size:0.4rem;
+      font-size:0.3rem;
     }
 
     .titulo-contacto{

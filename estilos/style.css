@@ -78,7 +78,6 @@ a:hover {
   justify-content: space-around;
   gap:1%;
   width:70%;
-  /*agregue width del navbar para ver si se corregia lo de la foto del fondo*/
 }
 
 .logo{
@@ -295,6 +294,7 @@ a:hover {
 
 .container-blog{
   margin-bottom:20%;
+  margin-top:10%;
 }
 
 .titulo-contacto, .titulo-blog{
@@ -371,7 +371,7 @@ footer{
 }
 
 /*!RESPONSIVE TABLET*/
-  @media (min-width:481px) and (max-width: 1023px) {
+  @media (min-width:483px) and (max-width: 1023px) {
     .index-container{
       display:flex;
       flex-direction: column;
@@ -400,14 +400,14 @@ footer{
       top:0%;
       display:flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
       transform: translate(110%);
       transition: transform .3s ease-in-out;
       z-index:20;
-      font-size:1.4rem;
+      font-size:1.2rem;
     }
 
     .xclose{
@@ -543,11 +543,12 @@ footer{
 
     .container-blog{
       margin-bottom:50%;
+      margin-top:25%;
     }
 }
 
 /*!RESPONSIVE CELULAR*/
-    @media (max-width: 480px){
+    @media (max-width: 482px){
     
     .index-container{
       display:flex;
@@ -587,7 +588,7 @@ footer{
       top:0%;
       display:flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
       box-shadow: 0 0 6px rgba(0, 0, 0, .5);
       background-color: var(--primary);
@@ -651,6 +652,8 @@ footer{
     .contact-button{
       font-size:15px;
       width: 50%;
+      margin-left:0;
+      margin-top:10%;
     }
 
     .container-celular{
@@ -760,6 +763,7 @@ footer{
 
     .container-blog{
       margin-bottom:70%;
+      margin-top:25%;
     }
 
     .texto-contacto{
@@ -780,10 +784,10 @@ footer{
       font-size: 15px;
     }
 
-      .logo-footer{
-        display:none;
-      }
+    .logo-footer{
+      display:none;
     }
+  }
 
 @media screen and (max-width: 320px){
   #nosotros, #trazabilidad {

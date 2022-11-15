@@ -7,6 +7,6 @@ Desarrollo del sitio web Conscious Trace, una startup que inició en el 2020 hac
 ***
 Podes clonar el repositorio: 
 ```
-$ git clone https://github.com/julimulinaris/textil-trace
+$ git clone https://github.com/julimulinaris/conscious-trace
 $ npm install
 ```
